@@ -1,5 +1,4 @@
 import os
-
 import pyxel
 
 TRANSPARENT_COLOR = 2
@@ -231,8 +230,7 @@ class Enemy3Bullet:
 class App:
     def __init__(self):
         pyxel.init(128, 128, title="SUPER  MATILDE")
-        base_path = os.getcwd()
-        pyxel.load(os.path.join(base_path, 'matilde_ss_xx22_assets.pyxres'))
+        pyxel.load('matilde_ss_xx22_assets.pyxres')
 
         # Change enemy spawn tiles invisible
         pyxel.image(0).rect(0, 8, 24, 8, TRANSPARENT_COLOR)
